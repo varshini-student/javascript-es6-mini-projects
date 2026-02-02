@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student Grade Tracker</h2>
+
+<form id="studentForm">
+    <input type="text" id="name" placeholder="Student Name" required>
+    <input type="number" id="mark1" placeholder="Subject 1 Marks" required>
+    <input type="number" id="mark2" placeholder="Subject 2 Marks" required>
+    <input type="number" id="mark3" placeholder="Subject 3 Marks" required>
+    <input type="number" id="mark4" placeholder="Subject 4 Marks" required>
+    <input type="number" id="mark5" placeholder="Subject 5 Marks" required>
+
+    <button type="submit">Add Student</button>
+    <button type="button" onclick="resetAll()">Clear & Reset</button>
+</form>
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Total</th>
+            <th>Average</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
