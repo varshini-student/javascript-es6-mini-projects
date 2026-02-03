@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conference Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Conference Event Schedule</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button onclick="showAll()">All</button>
+    <button onclick="filterCategory('Workshop')">Workshop</button>
+    <button onclick="filterCategory('Keynote')">Keynote</button>
+    <button onclick="filterCategory('Panel')">Panel</button>
+    <button onclick="filterTime('morning')">Morning</button>
+    <button onclick="filterTime('afternoon')">Afternoon</button>
+  </div>
+
+  <!-- Events will come here -->
+  <div id="eventContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
